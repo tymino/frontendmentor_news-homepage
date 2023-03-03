@@ -42,12 +42,15 @@ export default {
 
   &__links {
     display: flex;
+    text-transform: capitalize;
 
     &-item {
-      text-transform: capitalize;
+      margin-left: 30px;
+      transition: color var(--transition-delay);
 
-      &:not(:last-child) {
-        margin: 0 10px;
+      &:hover {
+        color: var(--color-soft-red);
+        cursor: pointer;
       }
     }
   }

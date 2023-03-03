@@ -17,5 +17,13 @@ export default {
 
 <style>
 #app {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1112px;
 }
 </style>
