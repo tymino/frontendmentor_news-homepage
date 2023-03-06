@@ -1,16 +1,21 @@
 <template>
   <div class="content">
     <Header />
+    <div class="content__body">
+      <Main class="content__body-main" />
+    </div>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue';
+import Main from '@/components/Main.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
+    Main,
   },
 };
 </script>
