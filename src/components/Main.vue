@@ -31,28 +31,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  &__burger-icon {
-    display: none;
+.main {
+  &__picture {
+    
   }
+  &__title {
 
-  &__links {
-    display: flex;
-    text-transform: capitalize;
+  }
+  &__describe {
 
-    &-item {
-      margin-left: 30px;
-      transition: color var(--transition-delay);
-
-      &:hover {
-        color: var(--color-soft-red);
-        cursor: pointer;
-      }
-    }
   }
 }
 </style>

@@ -4,6 +4,8 @@
     <div class="content__body">
       <Main class="content__body-main" />
     </div>
+    <div class="content__aside"></div>
+    <div class="content__bottom"></div>
   </div>
 </template>
 
