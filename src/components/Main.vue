@@ -32,14 +32,20 @@ export default {
 
 <style lang="scss" scoped>
 .main {
+  display: grid;
+  grid-template-rows: repeat(1fr, 5);
+  grid-template-columns: repeat(1fr 2);
+
   &__picture {
-    
+    & > img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
   }
   &__title {
-
   }
   &__describe {
-
   }
 }
 </style>

@@ -33,4 +33,7 @@ export default {
   width: 100%;
   max-width: 1112px;
 }
+
+@media (max-width: 640px) {
+}
 </style>
