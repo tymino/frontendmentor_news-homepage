@@ -26,6 +26,7 @@ export default {
 
   &:hover {
     background: var(--color-very-dark-blue);
+    cursor: pointer;
   }
 }
 </style>

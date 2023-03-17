@@ -9,7 +9,9 @@
     <div class="content__aside">
       <Aside />
     </div>
-    <div class="content__bottom"></div>
+    <div class="content__bottom">
+      <Bottom />
+    </div>
   </div>
 </template>
 
@@ -17,6 +19,7 @@
 import Header from '@/components/Header.vue';
 import Main from '@/components/Main.vue';
 import Aside from '@/components/Aside.vue';
+import Bottom from '@/components/Bottom.vue';
 
 export default {
   name: 'App',
@@ -24,6 +27,7 @@ export default {
     Header,
     Main,
     Aside,
+    Bottom,
   },
 };
 </script>
