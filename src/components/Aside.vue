@@ -34,15 +34,40 @@ export default {
 
 <style lang="scss" scoped>
 .aside {
+  padding: 24px;
+  height: 100%;
   background: var(--color-very-dark-blue);
+
   &__title {
+    margin-bottom: 10px;
     color: var(--color-soft-orange);
+    font-size: 2.2rem;
+    font-weight: var(--font-bold);
+    text-transform: capitalize;
   }
-  
+
   &__body {
-    &-title {
+    padding: 24px 0px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--color-grayish-blue);
     }
+
+    &-title {
+      margin-bottom: 10px;
+      color: var(--color-off-white);
+      font-weight: var(--font-bold);
+      transition: color var(--transition-delay);
+
+      &:hover {
+        color: var(--color-soft-orange);
+        cursor: pointer;
+      }
+    }
+
     &-body {
+      color: var(--color-grayish-blue);
+      line-height: 22px;
     }
   }
 }
