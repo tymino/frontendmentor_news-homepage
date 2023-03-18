@@ -62,6 +62,32 @@ export default {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 550px) {
+  .content {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    grid-template-areas:
+      'a a a'
+      'b b b'
+      'c c c'
+      'd d d';
+    margin-top: 0px;
+    padding: 20px;
+
+    &__header {
+      grid-area: a;
+      margin-bottom: 0px;
+    }
+    &__main {
+      grid-area: b;
+    }
+    &__aside {
+      grid-area: c;
+    }
+    &__bottom {
+      grid-area: d;
+    }
+  }
 }
 </style>

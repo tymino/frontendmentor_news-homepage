@@ -38,7 +38,6 @@ export default {
 .main {
   display: flex;
   flex-direction: column;
-  
 
   &__picture {
     & > img {
@@ -70,12 +69,29 @@ export default {
     justify-content: space-between;
     align-items: flex-start;
     padding-right: 10px;
+  }
+}
 
-    // &-text {
-    // }
+@media (max-width: 550px) {
+  .main {
+    margin-bottom: 20px;
 
-    // &-button {
-    // }
+    &__wrapper {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__describe {
+      padding-right: 0px;
+
+      &-button {
+        margin-top: 20px;
+      }
+    }
   }
 }
 </style>

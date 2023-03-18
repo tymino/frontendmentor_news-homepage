@@ -92,6 +92,11 @@ export default {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 550px) {
+  .bottom {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
 }
 </style>
